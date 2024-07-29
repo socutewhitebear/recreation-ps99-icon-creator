@@ -6,6 +6,7 @@ body {
         align-items: center;
         background-color: #f0f0f0;
         padding: 0;
+        user-select: none;
         margin: 0;
       }
       header {
@@ -19,7 +20,7 @@ body {
         text-decoration: none;
       }
       #canvas-container {
-        padding: 0px 30px; 
+        padding: 1vw 4vw; 
         align-items: center;
         justify-content: center;
         display: flex;
@@ -134,6 +135,9 @@ body {
 
       /* Media query for mobile devices */
       @media (max-width: 768px) {
+        #canvas-container {
+          padding: 0 20vw;
+        }
         #outer-container {
           width: 60vw;
           height: 60vw;
